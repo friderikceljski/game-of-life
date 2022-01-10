@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="./lib/p5.js"></script>
+    <script src="./sketch.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet"> 
+    <title>Game of life</title>
+    <style>
+        body {
+            font-family: 'Inconsolata', sans-serif;
+            background: #0f0f23;
+        }
+        canvas {
+            border: 1px solid white;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #00cc00;
+        }
+        button {
+            border: 1px solid #6868fc;
+            background-color: #1010c2;
+            padding: 0.5em;
+            color: #00cc00;
+        }
+        div {
+            margin-top: 1em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1em;
+            display: block;
+            width: max-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game of life</h1>
+    <div>
+        <button onclick="activate()">start/stop</button>
+        <button onclick="refresh()">clear</button>
+    </div>
+</body>
+</html>
